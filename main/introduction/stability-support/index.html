@@ -678,6 +678,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#upgrading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#provider-stability-and-support-level" class="md-nav__link">
     <span class="md-ellipsis">
       Provider Stability and Support Level
@@ -1087,6 +1096,8 @@
       
         
       
+        
+      
     
     
     
@@ -1191,6 +1202,29 @@
   
   <span class="md-ellipsis">
     AWS STS Session Token
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/generator/cloudsmith/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cloudsmith
     
   </span>
   
@@ -2456,6 +2490,8 @@
       
         
       
+        
+      
     
     
     
@@ -3389,6 +3425,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../provider/volcengine/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Volcengine
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3618,6 +3677,8 @@
       
         
       
+        
+      
     
     
     
@@ -3782,6 +3843,29 @@
   
   <span class="md-ellipsis">
     Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/burnout-mitigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Burnout Prevention
     
   </span>
   
@@ -3996,6 +4080,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#upgrading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#provider-stability-and-support-level" class="md-nav__link">
     <span class="md-ellipsis">
       Provider Stability and Support Level
@@ -4191,6 +4284,22 @@ As of version 0.14.x , this is the only kubernetes version that we will guarante
 </tr>
 </tbody>
 </table>
+<h2 id="upgrading">Upgrading</h2>
+<p>External Secrets Operator has not reached stable 1.0 yet. This means that <strong>we treat each minor version bump as a potentially breaking change</strong>. Breaking changes may include:</p>
+<ul>
+<li>API schema changes</li>
+<li>Default behavior modifications</li>
+<li>Deprecated feature removals</li>
+<li>Provider authentication changes</li>
+<li>Configuration format updates</li>
+</ul>
+<p><strong>Important upgrade recommendations:</strong></p>
+<ol>
+<li><strong>Plan your upgrades carefully</strong> - Always review release notes before upgrading, it could contain breaking changes information</li>
+<li><strong>Upgrade version by version</strong> - We strongly recommend upgrading one minor version at a time (e.g., 0.18.x → 0.19.x → 0.20.x) rather than skipping versions</li>
+<li><strong>Test in non-production first</strong> - Always validate upgrades in development/staging environments</li>
+</ol>
+<p>Until we reach v1.0, please treat minor version upgrades with the same caution you would give to major version upgrades in other projects.</p>
 <h2 id="provider-stability-and-support-level">Provider Stability and Support Level</h2>
 <p>The following table describes the stability level of each provider and who's responsible.</p>
 <table>
@@ -4351,6 +4460,11 @@ As of version 0.14.x , this is the only kubernetes version that we will guarante
 <td><a href="https://external-secrets.io/latest/provider/cloudru">Cloud.ru</a></td>
 <td style="text-align: right;">alpha</td>
 <td style="text-align: right;"><a href="https://github.com/default23">@default23</a></td>
+</tr>
+<tr>
+<td><a href="https://external-secrets.io/latest/provider/volcengine">Volcengine</a></td>
+<td style="text-align: right;">alpha</td>
+<td style="text-align: right;"><a href="https://github.com/kevinyancn">@kevinyancn</a></td>
 </tr>
 </tbody>
 </table>
@@ -4669,6 +4783,16 @@ As of version 0.14.x , this is the only kubernetes version that we will guarante
 <td style="text-align: center;">x</td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;">x</td>
+</tr>
+<tr>
+<td>Volcengine</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">x</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
